@@ -19,7 +19,7 @@ def sumar(a: int, b: int):
 class Numeros(BaseModel):
     valores: List[float]
 
-
+# promedio
 @app.post("/promedio")
 def promedio(datos: Numeros):
     if not datos.valores:
